@@ -10,7 +10,7 @@ We start with two datasets: one containing promoter sequences and the other cont
 
 ## Model Creation
 A Convolutional Neural Network (CNN) is created using Keras. The model architecture consists of a series of layers designed to capture and learn from DNA sequence patterns: an initial Conv1D layer with 128 filters and 
-a kernel size of 3 using ReLU activation, followed by a MaxPooling1D layer with a pool size of 2, and a Dropout layer with a rate of 0.2. This is followed by another Conv1D layer with 64 filters, a kernel size of 2, 
+a kernel size of 3 using ReLU activation, followed by a MaxPooling1D layer with a pool size of 2, and a Dropout layer with a rate of 0.4. This is followed by another Conv1D layer with 64 filters, a kernel size of 2, 
 ReLU activation, and the same padding, again followed by MaxPooling1D and Dropout layers with the same configurations. A third Conv1D layer with 32 filters and a kernel size of 2 using ReLU activation and the same padding 
 is added, followed by MaxPooling1D and Dropout layers. The sequence is then flattened, followed by dense layers with 128, 64, 32, and 16 units, all using ReLU activation, with the final dense layer incorporating L2 regularization. The output layer consists of 2 units with sigmoid activation for binary classification.
 
